@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".Goals">
+
+    <TextView
+        android:id="@+id/goals_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="177dp"
+        android:layout_marginTop="58dp"
+        android:layout_marginEnd="176dp"
+        android:layout_marginBottom="654dp"
+        android:text="Water Use Goal"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        tools:visibility="visible" />
+
+    <Button
+        android:id="@+id/changeGoalButton"
+        android:layout_width="213dp"
+        android:layout_height="59dp"
+        android:layout_marginTop="20dp"
+        android:text="Change Goal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editGoalTextInput" />
+
+    <EditText
+        android:id="@+id/editGoalTextInput"
+        android:layout_width="348dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="4dp"
+        android:ems="10"
+        android:hint="New Goal Value"
+        android:inputType="number"
+        android:text="New Goal"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.46"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <TextView
+        android:id="@+id/boxgoal"
+        android:layout_width="400dp"
+        android:layout_height="140dp"
+        android:layout_marginTop="36dp"
+        android:background="@drawable/box"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.454"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/goals_text" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:lineSpacingExtra="20sp"
+        android:text="Your current water goal:"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/boxgoal"
+        app:layout_constraintStart_toStartOf="@+id/boxgoal"
+        app:layout_constraintTop_toTopOf="@+id/boxgoal" />
+
+    <TextView
+        android:id="@+id/goalValueTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:text="liters per day"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/boxgoal"
+        app:layout_constraintStart_toStartOf="@+id/boxgoal"
+        app:layout_constraintTop_toTopOf="@+id/boxgoal" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="345dp"
+        android:layout_height="74dp"
+        android:layout_marginTop="60dp"
+        android:text="To change your current water use goal, type bellow your new desired goal and press &quot;Change Goal&quot;"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/boxgoal" />
+</androidx.constraintlayout.widget.ConstraintLayout>
